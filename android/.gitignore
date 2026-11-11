@@ -1,0 +1,38 @@
+gradle-wrapper.jar
+/.gradle
+/captures/
+/gradlew
+/gradlew.bat
+/local.properties
+GeneratedPluginRegistrant.java
+.cxx/
+
+# Remember to never publicly share your keystore.
+# See https://flutter.dev/to/reference-keystore
+key.properties
+**/*.keystore
+**/*.jks
+
+
+cat >> .gitignore <<'EOF'
+
+# Flutter generated files
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Environment and sensitive files
+.env
+*.jks
+*.keystore
+key.properties
+
+# Database backups
+*.sql
+
+# macOS files
+.DS_Store
+EOF
